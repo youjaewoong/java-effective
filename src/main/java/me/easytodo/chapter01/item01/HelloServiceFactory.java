@@ -6,8 +6,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Optional;
 import java.util.ServiceLoader;
 
-import me.easytodo.hello.ChineseHelloService;
-
 public class HelloServiceFactory {
 
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
