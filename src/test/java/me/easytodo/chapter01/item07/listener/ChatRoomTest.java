@@ -1,4 +1,4 @@
-package me.whiteship.chapter01.item07.listener;
+package me.easytodo.chapter01.item07.listener;
 
 import org.junit.jupiter.api.Test;
 
@@ -30,7 +30,8 @@ class ChatRoomTest {
         Thread.sleep(5000L);
 
         List<WeakReference<User>> users = chatRoom.getUsers();
-        assertTrue(users.size() == 1);
+        assertFalse(users.size() == 1);
+        //assertTrue(users.size() == 1);
     }
 
 }

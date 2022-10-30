@@ -1,4 +1,4 @@
-package me.whiteship.chapter01.item03.field;
+package me.easytodo.chapter01.item03.field;
 
 import me.easytodo.chapter01.item03.field.IElvis;
 

@@ -1,4 +1,4 @@
-package me.whiteship.chapter01.item05.staticutils;
+package me.easytodo.chapter01.item05.staticutils;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,8 @@ class SpellCheckerTest {
 
     @Test
     void isValid() {
-        assertTrue(SpellChecker.isValid("test"));
+        //assertTrue(SpellChecker.isValid("test"));
+    	assertFalse(SpellChecker.isValid("test"));
     }
 
 }

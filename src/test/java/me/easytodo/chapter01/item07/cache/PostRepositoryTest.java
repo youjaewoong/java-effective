@@ -1,4 +1,4 @@
-package me.whiteship.chapter01.item07.cache;
+package me.easytodo.chapter01.item07.cache;
 
 import org.junit.jupiter.api.Test;
 

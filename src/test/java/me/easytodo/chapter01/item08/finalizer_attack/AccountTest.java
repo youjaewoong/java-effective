@@ -1,4 +1,4 @@
-package me.whiteship.chapter01.item08.finalizer_attack;
+package me.easytodo.chapter01.item08.finalizer_attack;
 
 import org.junit.jupiter.api.Test;
 

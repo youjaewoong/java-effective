@@ -1,4 +1,4 @@
-package me.whiteship.chapter01.item05.dependencyinjection;
+package me.easytodo.chapter01.item05.dependencyinjection;
 
 import org.junit.jupiter.api.Test;
 

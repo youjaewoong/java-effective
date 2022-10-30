@@ -1,4 +1,4 @@
-package me.whiteship.chapter01.item07.optional;
+package me.easytodo.chapter01.item07.optional;
 
 import org.junit.jupiter.api.Test;
 
