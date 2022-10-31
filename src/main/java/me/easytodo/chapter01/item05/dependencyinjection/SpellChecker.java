@@ -5,6 +5,9 @@ import java.util.function.Supplier;
 
 import me.easytodo.chapter01.item05.Dictionary;
 
+/**
+ * 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라 
+ */
 public class SpellChecker {
 
     private final Dictionary dictionary;
@@ -13,6 +16,11 @@ public class SpellChecker {
         this.dictionary = dictionary;
     }
 
+    /**
+     * 팩토리메소드패턴
+     * {@link me.easytodo.chapter01.item05.dependencyinjection.SpellCheckerTest}
+     * @param dictionarySupplier
+     */
     public SpellChecker(Supplier<Dictionary> dictionarySupplier) {
         this.dictionary = dictionarySupplier.get();
     }
