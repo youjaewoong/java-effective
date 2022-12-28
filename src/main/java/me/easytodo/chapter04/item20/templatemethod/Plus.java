@@ -5,9 +5,9 @@ public class Plus extends FileProcessor {
         super(path);
     }
 
-    @Override
-    protected int getResult(int result, int number) {
-        return result + number;
-    }
+//    @Override
+//    protected int getResult(int result, int number) {
+//        return result + number;
+//    }
 
 }

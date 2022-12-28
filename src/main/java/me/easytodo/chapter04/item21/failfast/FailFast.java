@@ -38,7 +38,7 @@ public class FailFast {
 //        }
 
         // removeIf 사용하기
-//        numbers.removeIf(number -> number == 3);
+       numbers.removeIf(number -> number == 3);
 
         // 출력
         numbers.forEach(System.out::println);
