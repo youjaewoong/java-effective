@@ -47,7 +47,7 @@ public class Stack<E> {
 //            push(e);
 //    }
 
-     // 코드 31-2 E 생산자(producer) 매개변수에 와일드카드 타입 적용 (182쪽)
+     // 코드 31-2 E 생산자(producer) 매개변수에 와일드카드 타입 적용 (182쪽) 넣을때
     public void pushAll(Iterable<? extends E> src) {
         for (E e : src)
             push(e);
@@ -59,7 +59,7 @@ public class Stack<E> {
 //            dst.add(pop());
 //    }
 
-    // 코드 31-4 E 소비자(consumer) 매개변수에 와일드카드 타입 적용 (183쪽)
+    // 코드 31-4 E 소비자(consumer) 매개변수에 와일드카드 타입 적용 (183쪽) 꺼낼때
     public void popAll(Collection<? super E> dst) {
         while (!isEmpty())
             dst.add(pop());
