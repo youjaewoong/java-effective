@@ -28,13 +28,14 @@ public class BoxExample {
 
 
     public static void main(String[] args) {
+        // <> 은타입추론 이다.
         ArrayList<Box<Integer>> listOfIntegerBoxes = new ArrayList<>();
         BoxExample.addBox(10, listOfIntegerBoxes);
         BoxExample.addBox(20, listOfIntegerBoxes);
         BoxExample.addBox(30, listOfIntegerBoxes);
         BoxExample.outputBoxes(listOfIntegerBoxes);
 
-        // Target Type
+        // Target Type 을 보고 Collections.emptyList(); 은 추론한다
         List<String> stringlist = Collections.emptyList();
         List<Integer> integerlist = Collections.emptyList();
         BoxExample.processStringList(Collections.emptyList());

@@ -7,7 +7,7 @@ import java.util.List;
 public class Swap {
 
     public static <E> void swap(List<E> list, int i, int j) {
-//    public static void swap(List<?> list, int i, int j) {
+//    public static void swap(List<?> list, int i, int j) { // 비한정적인 타입 <?>
         list.set(i, list.set(j, list.get(i)));
 //        swapHelper(list, i, j);
     }
