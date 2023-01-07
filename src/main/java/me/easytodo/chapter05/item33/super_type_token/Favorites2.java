@@ -26,6 +26,7 @@ public class Favorites2 {
         TypeRef<List<Integer>> integerTypeRef = new TypeRef<>() {};
         System.out.println(integerTypeRef.getType());
 
+        //f.put(new TypeRef<List<String>>() {}, List.of("a", "b","c"));
         f.put(stringTypeRef, List.of("a", "b", "c"));
         f.put(integerTypeRef, List.of(1, 2, 3));
         f.get(stringTypeRef).forEach(System.out::println);

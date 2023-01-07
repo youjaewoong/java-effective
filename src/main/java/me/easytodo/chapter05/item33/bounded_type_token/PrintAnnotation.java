@@ -5,7 +5,6 @@ import java.lang.reflect.AnnotatedElement;
 
 // 코드 33-5 asSubclass를 사용해 한정적 타입 토큰을 안전하게 형변환한다. (204쪽)
 public class PrintAnnotation {
-
     static Annotation getAnnotation(AnnotatedElement element, String annotationTypeName) {
         Class<?> annotationType = null; // 비한정적 타입 토큰
         try {
@@ -13,6 +12,7 @@ public class PrintAnnotation {
         } catch (Exception ex) {
             throw new IllegalArgumentException(ex);
         }
+        // 뒤에 타입의 하위타입을 가져온다
         return element.getAnnotation(annotationType.asSubclass(Annotation.class));
     }
 

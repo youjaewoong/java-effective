@@ -21,7 +21,8 @@
 - 아이템 16. public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라
   - [sample](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter04/item16/point/method/Point.java)
 - 아이템 17. 변경 가능성을 최소화하라
-- 아이템 18. 상속보다는 컴포지션을 사용하라
+  - 아이템 18. 상속보다는 컴포지션을 사용하라
+  - [컴포지션](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter04/item18/ForwardingSet.java)
 - 아이템 19. 상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라
 - 아이템 20. 추상 클래스보다는 인터페이스를 우선하라
 - 아이템 21. 인터페이스는 구현하는 쪽을 생각해 설계하라
@@ -44,8 +45,15 @@
   - [sample](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter05/item31/Stack.java)
   - [타입추론](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter05/item31/typeinference/BoxExample.java)
 - 아이템 32. 제네릭과 가변인수를 함께 쓸 때는 신중하라
+  - [sample](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter05/item32/FlattenWithList.java)
+  - [threadLocal](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter05/item32/threadlocal/ThreadLocalExample.java)
+  - [threadLocalRandom](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter05/item32/random/RandomExample.java)
 - 아이템 33. 타입 안전 이종 컨테이너를 고려하라
-
+  - [타입안전이종컨테이너](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter05/item33/type_token/Favorites.java)
+  - [슈퍼타입토큰1](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter05/item33/super_type_token/GenericTypeInfer.java)
+  - [슈퍼타입토큰2 타입정보 추상클래스](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter05/item33/super_type_token/TypeRef.java)
+  - [슈퍼타입토큰으로 타입안전이종컨테이너 구현](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter05/item33/super_type_token/Favorites2.java)
+  - [어노테이션 한정적 제한을 통한 asSubclass를 사용해 한정적 타입 토큰을 안전하게 형변환한다](https://github.com/youjaewoong/java-effective/blob/master/src/main/java/me/easytodo/chapter05/item33/bounded_type_token/PrintAnnotation.java)
 ### 6장 열거 타입과 애너테이션
 - 아이템 34. int 상수 대신 열거 타입을 사용하라
 - 아이템 35. ordinal 메서드 대신 인스턴스 필드를 사용하라

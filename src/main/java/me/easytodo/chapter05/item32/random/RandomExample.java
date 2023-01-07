@@ -6,9 +6,12 @@ import java.util.concurrent.ThreadLocalRandom;
 public class RandomExample {
 
     public static void main(String[] args) {
+
+        // thread safe x
         Random random = new Random();
         System.out.println(random.nextInt(10));
 
+        //thread safe
         ThreadLocalRandom threadLocalRandom = ThreadLocalRandom.current();
         System.out.println(threadLocalRandom.nextInt(10));
     }
